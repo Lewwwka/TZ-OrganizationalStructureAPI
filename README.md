@@ -10,7 +10,7 @@ REST API для управления иерархической структур
 - **PostgreSQL 16** – надёжная реляционная база данных
 - **Alembic** – миграции схемы БД
 - **Docker / Docker Compose** – контейнеризация и запуск
-- **Pytest + httpx** – тестирование API
+- **Pytest** – тестирование API
 
 ## Быстрый старт (Docker)
 
@@ -25,20 +25,3 @@ REST API для управления иерархической структур
 
 Интерактивная документация (Swagger UI):
 http://localhost:8000/docs
-
-
-## Структура проекта
-
-org_structure/
-├── app/
-│   ├── api/            # Роутеры и зависимости
-│   ├── core/           # Конфигурация, БД, логирование
-│   ├── models/         # SQLAlchemy модели
-│   ├── repositories/   # Работа с базой данных
-│   ├── schemas/        # Pydantic схемы
-│   └── services/       # Бизнес-логика
-├── migrations/         # Alembic миграции
-├── tests/              # Тесты
-├── docker-compose.yml
-├── Dockerfile
-└── README.md
